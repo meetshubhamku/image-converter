@@ -2,7 +2,7 @@ const axios = require("axios");
 const sharp = require("sharp");
 
 exports.fetchImage = async (req, res, next) => {
-  const imgUrl = req.query.image || "http://vto1.cloud.in/profile.jpg";
+  const imgUrl = req.query.image || "https://picsum.photos/200";
 
   const img = (
     await axios({
