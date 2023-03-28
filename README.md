@@ -24,3 +24,21 @@ Image
 Quality
 
 - The quality parameter sets the quality of the image. Accepts an integer value ranging between 0 to 100. Default set to 80.
+
+## Installation
+
+Steps
+
+```bash
+    git clone repository-url
+    cd image-converter
+    npm install
+    npm start 
+```
+    
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`PORT=8000`
+
