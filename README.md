@@ -1,13 +1,10 @@
-
 # Image Converter
 
 This project focuses on converting the images into desirable output using various query parameters.
 
 Sample URL
 
-
-- http://localhost:3000/unsafe?height=500&width=500&quality=50&image=http://path/to/image.jpg
-
+- http://localhost:3000/unsafe?height=500&width=500&quality=50&format=webp&image=http://path/to/image.jpg
 
 Height
 
@@ -33,12 +30,11 @@ Steps
     git clone repository-url
     cd image-converter
     npm install
-    npm start 
+    npm start
 ```
-    
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
 
 `PORT=8000`
-
