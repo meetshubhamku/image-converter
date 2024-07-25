@@ -53,5 +53,4 @@ git clone https://github.com/meetshubhamku/image-converter.git
 cd image-converter
 npm install
 npm start
-~~~
 ```
