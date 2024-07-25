@@ -2,17 +2,23 @@ const express = require("express");
 require("dotenv").config();
 const app = express();
 const sharp = require("sharp");
+const helmet = require("helmet");
 const { fetchImage } = require("./App/controllers/imageControllers");
+
+// Use Helmet!
+app.use(helmet());
 
 const port = process.env.PORT || 3000;
 
 app.get("/unsafe", fetchImage, async (req, res) => {
-  const { img, metadata } = req.profile;
+  const { img, original_img_metadata } = req.profile;
   console.log("params : ", req.query);
-  // console.log("Metadata - ", metadata);
+  // console.log("Metadata - ", original_img_metadata);
 
-  const height = parseInt(req.query.height) || parseInt(metadata.height);
-  const width = parseInt(req.query.width) || parseInt(metadata.width);
+  const height =
+    parseInt(req.query.height) || parseInt(original_img_metadata.height);
+  const width =
+    parseInt(req.query.width) || parseInt(original_img_metadata.width);
   const quality = parseInt(req.query.quality || 70);
   const fit = req.query.fit || "cover";
   const format = req.query.format || "webp";

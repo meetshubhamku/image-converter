@@ -16,7 +16,7 @@ Width
 
 Image
 
-- The image parameter sets the location of the image which needs to converted. Accepts a string
+- The image parameter sets the location of the image which needs to be converted. Accepts a string
 
 Quality
 
