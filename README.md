@@ -12,7 +12,7 @@ Use this URL format to convert a specific image:
 
 ### With Dummy Image
 
-Use this URL format to convert a sample image from `picsum.photos`:
+Use this URL format to convert a sample image from `picsum.photos` of dimention 1000x1000:
 
 `http://localhost:3000/unsafe?height=500&width=500&quality=50&format=webp`
 

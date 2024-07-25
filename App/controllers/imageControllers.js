@@ -18,7 +18,7 @@ const sharp = require("sharp");
 
 exports.fetchImage = async (req, res, next) => {
   try {
-    const imgUrl = req.query.image || "https://picsum.photos/200";
+    const imgUrl = req.query.image || "https://picsum.photos/1000";
 
     const response = await axios.get(imgUrl, { responseType: "arraybuffer" });
 
