@@ -31,7 +31,7 @@ Format
 Steps
 
 ```bash
-    git clone repository-url
+    git clone https://github.com/meetshubhamku/image-converter.git
     cd image-converter
     npm install
     npm start
