@@ -1,44 +1,57 @@
 # Image Converter
 
-This project focuses on converting the images into desirable output using various query parameters.
+This project allows users to convert images to desirable outputs using various query parameters. It supports setting image height, width, quality, and format.
 
-Sample URL
+## Sample URLs
 
-- http://localhost:3000/unsafe?height=500&width=500&quality=50&format=webp&image=http://path/to/image.jpg
+### With Your Image
 
-Height
+Use this URL format to convert a specific image:
 
-- The height parameter sets the height of the image. Accepts an integer value
+`http://localhost:3000/unsafe?height=500&width=500&quality=50&format=webp&image=http://path/to/image.jpg`
 
-Width
+### With Dummy Image
 
-- The hewidthight parameter sets the width of the image. Accepts an integer value
+Use this URL format to convert a sample image from `picsum.photos`:
 
-Image
+`http://localhost:3000/unsafe?height=500&width=500&quality=50&format=webp`
 
-- The image parameter sets the location of the image which needs to be converted. Accepts a string
+## Parameters
 
-Quality
+### Height
 
-- The quality parameter sets the quality of the image. Accepts an integer value ranging between 0 to 100. Default set to 70.
+The `height` parameter sets the height of the image. It accepts an integer value.
 
-Format
+### Width
 
-- The format parameter sets the output image format. If not provided default is set to 'webp'.
+The `width` parameter sets the width of the image. It accepts an integer value.
 
-## Installation
+### Image
 
-Steps
+The `image` parameter specifies the URL of the image to be converted. It accepts a string value.
 
-```bash
-    git clone https://github.com/meetshubhamku/image-converter.git
-    cd image-converter
-    npm install
-    npm start
-```
+### Quality
+
+The `quality` parameter sets the quality of the output image. It accepts an integer value ranging from 0 to 100, with a default value of 70.
+
+### Format
+
+The `format` parameter sets the output image format. If not provided, the default is set to 'webp'.
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you need to add the following environment variable to your `.env` file:
 
 `PORT=8000`
+
+## Installation
+
+To install and run the project, follow these steps:
+
+```bash
+git clone https://github.com/meetshubhamku/image-converter.git
+cd image-converter
+npm install
+npm start
+~~~
+```
