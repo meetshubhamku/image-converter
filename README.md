@@ -20,7 +20,11 @@ Image
 
 Quality
 
-- The quality parameter sets the quality of the image. Accepts an integer value ranging between 0 to 100. Default set to 80.
+- The quality parameter sets the quality of the image. Accepts an integer value ranging between 0 to 100. Default set to 70.
+
+Format
+
+- The format parameter the output image format. If not provided default is set to 'webp'.
 
 ## Installation
 
