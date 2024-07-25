@@ -24,7 +24,7 @@ Quality
 
 Format
 
-- The format parameter the output image format. If not provided default is set to 'webp'.
+- The format parameter sets the output image format. If not provided default is set to 'webp'.
 
 ## Installation
 
